@@ -1,0 +1,26 @@
+unit State.Model.Interfaces;
+
+interface
+
+type
+
+  iItem = interface
+    ['{2FA38521-9128-49F7-87F6-8736BA74D958}']
+  end;
+
+  iItemOperacaoes = interface
+    function Vender : iItem;
+    function Cancelar : iItem;
+    function Desconto : iItem;
+    function Devolver : iItem;
+  end;
+
+  iState<t> = interface
+    function SetState(Value : t) : t;
+  end;
+
+
+
+implementation
+
+end.

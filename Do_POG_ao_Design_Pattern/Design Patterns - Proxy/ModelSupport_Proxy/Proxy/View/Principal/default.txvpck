@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="4t6rh11oimjxeqenl_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Proxy:Proxy.View.Principal.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Proxy:Proxy.View.Principal.@unitclass.Form2" />
+      <reference referencedUin="delphi:l_ast:src:Proxy:Proxy.View.Principal.@unitclass.Form2" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Proxy:Proxy.View.Principal.TForm2">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,89,81" />
+    </reference>
+  </view>
+</nodeSet>

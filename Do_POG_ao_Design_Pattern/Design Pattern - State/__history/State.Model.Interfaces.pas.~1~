@@ -1,0 +1,7 @@
+unit State.Model.Interfaces;
+
+interface
+
+implementation
+
+end.

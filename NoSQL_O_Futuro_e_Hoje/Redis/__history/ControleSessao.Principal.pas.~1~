@@ -1,0 +1,68 @@
+unit ControleSessao.Principal;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls,
+  Redis.Commons, // Interfaces and types
+  Redis.Client, // The client itself
+  Redis.NetLib.INDY, // The tcp library used
+  Redis.Values, FMX.ScrollBox, FMX.Memo, FMX.Edit; // nullable types for redis commands;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    Timer1: TTimer;
+    Edit1: TEdit;
+    ToolBar1: TToolBar;
+    Label1: TLabel;
+    Label2: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    lRedis: IRedisClient;
+    lValue: TRedisString;
+    Chave : String;
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  lRedis := TRedisClient.Create('127.0.0.1', 6379);
+  lRedis.Connect;
+  lRedis.&SET(Chave, Edit1.Text, 10);
+  Memo1.Lines.Add('O Usuário Thulio está logado com a chave: ' + Chave);
+  Timer1.Enabled := true;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  Chave := TGUID.NewGuid.ToString;
+end;
+
+procedure TForm1.Timer1Timer(Sender: TObject);
+begin
+  if lRedis.EXISTS(CHAVE) then
+    Memo1.Lines.Add('O Usuário está logado')
+  else
+  begin
+    Memo1.Lines.Add('O Usuário não está logado');
+    Timer1.Enabled := false;
+  end;
+
+end;
+
+end.

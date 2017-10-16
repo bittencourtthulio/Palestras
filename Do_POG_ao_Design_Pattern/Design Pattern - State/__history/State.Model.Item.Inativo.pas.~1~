@@ -1,0 +1,7 @@
+unit State.Model.Item.Inativo;
+
+interface
+
+implementation
+
+end.

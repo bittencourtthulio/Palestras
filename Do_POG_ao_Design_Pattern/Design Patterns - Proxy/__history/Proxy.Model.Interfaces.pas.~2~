@@ -1,0 +1,12 @@
+unit Proxy.Model.Interfaces;
+
+interface
+
+  iModelProduto = interface
+    ['{B7EFCFDE-22B7-4300-A818-425033A597CA}']
+    function ConsultaID(Value : Integer) : iModelProduto;
+  end;
+
+implementation
+
+end.

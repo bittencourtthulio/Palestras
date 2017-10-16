@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/06/20 13:51:44.000.262,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/06/20 13:59:29.000.772,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/06/20 21:31:36.000.352,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/06/20 21:33:22.000.953,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/06/20 21:34:00.000.652,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/06/20 22:05:55.000.069,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/07/08 09:07:40.000.704,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/05 08:39:39.000.224,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/05 11:48:27.000.232,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/05 11:48:27.000.986,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2017/08/05 11:48:29.000.089,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2017/08/11 10:52:08.000.037,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/12 15:42:04.000.341,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/15 10:02:40.000.324,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/18 00:20:19.000.612,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/29 09:56:37.000.813,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2017/09/03 19:34:14.000.424,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/09/04 21:01:39.000.169,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/09/04 23:19:07.000.712,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/09/10 19:04:59.000.717,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/09/12 16:15:11.000.727,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/09/15 15:23:40.000.338,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/09/15 15:24:01.000.959,C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit2.pas=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\Proxy.View.Principal.pas</Transaction>
+    <Transaction>2017/09/15 15:24:01.000.959,C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit2.dfm=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\Proxy.View.Principal.dfm</Transaction>
+    <Transaction>2017/09/15 15:24:05.000.124,C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\Proxy.dproj</Transaction>
+    <Transaction>2017/09/15 15:27:48.000.165,=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\ModelSupport_Proxy\default.txaPackage</Transaction>
+    <Transaction>2017/09/15 15:27:49.000.456,=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\ModelSupport_Proxy\default.txvpck</Transaction>
+    <Transaction>2017/09/15 15:27:50.000.761,=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\ModelSupport_Proxy\Proxy\default.txvpck</Transaction>
+    <Transaction>2017/09/15 15:27:51.000.422,=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\ModelSupport_Proxy\Proxy\View\default.txvpck</Transaction>
+    <Transaction>2017/09/15 15:27:53.000.647,=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\ModelSupport_Proxy\Proxy\View\Principal\default.txaPackage</Transaction>
+    <Transaction>2017/09/15 15:27:53.000.482,=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\ModelSupport_Proxy\Proxy\View\Principal\default.txvpck</Transaction>
+    <Transaction>2017/09/15 15:28:01.000.169,=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\ModelSupport_Proxy\Proxy\View\default.txaPackage</Transaction>
+    <Transaction>2017/09/15 15:28:01.000.153,=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\ModelSupport_Proxy\Proxy\default.txaPackage</Transaction>
+    <Transaction>2017/09/15 15:28:58.000.912,=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\Unit1.pas</Transaction>
+    <Transaction>2017/09/15 15:29:10.000.036,D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\Unit1.pas=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\Proxy.Model.Interfaces.pas</Transaction>
+    <Transaction>2017/09/15 15:30:23.000.634,=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\Unit1.pas</Transaction>
+    <Transaction>2017/09/15 15:30:32.000.809,D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\Unit1.pas=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\Proxy.Model.Produto.pas</Transaction>
+    <Transaction>2017/09/15 15:31:28.000.483,=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\Unit1.pas</Transaction>
+    <Transaction>2017/09/15 15:31:37.000.305,D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\Unit1.pas=D:\Projetos\Cursos\Delphi Updates\Módulo IV\Principal\Proxy\Proxy.Model.Produto.Proxy.pas</Transaction>
+  </Transactions>
+</BorlandProject>

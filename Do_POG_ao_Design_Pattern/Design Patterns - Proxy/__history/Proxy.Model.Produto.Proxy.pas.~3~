@@ -1,0 +1,43 @@
+unit Proxy.Model.Produto.Proxy;
+
+interface
+
+uses Proxy.Model.Interfaces, System.Generics.Collections;
+
+Type
+  TModelProdutoProxy = class(TInterfacedObject, iProxyProduto)
+    private
+      FList : TDictionary<string, iModelProduto>;
+    public
+      constructor Create;
+      destructor Destroy; override;
+      class function New : iProxyProduto;
+      function ConsultaId(Value : Integer) : iModelProduto;
+  end;
+
+implementation
+
+{ TModelProdutoProxy }
+
+function TModelProdutoProxy.ConsultaId(Value: Integer): iModelProduto;
+begin
+
+end;
+
+constructor TModelProdutoProxy.Create;
+begin
+  FList := TDictionary<string, iModelProduto>.Create;
+end;
+
+destructor TModelProdutoProxy.Destroy;
+begin
+  FreeAndNil(FList);.
+  inherited;
+end;
+
+class function TModelProdutoProxy.New: iProxyProduto;
+begin
+  Result := Self.Create;
+end;
+
+end.

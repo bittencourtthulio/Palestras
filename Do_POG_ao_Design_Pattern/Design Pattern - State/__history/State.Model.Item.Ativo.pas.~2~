@@ -1,0 +1,41 @@
+unit State.Model.Item.Ativo;
+
+interface
+
+uses State.Model.Interfaces;
+
+Type
+  TModelItemAtivo = class(TInterfacedObject, iItemOperacaoes)
+    private
+      FAncestral : iItem;
+    public
+      constructor Create(Value : iItem);
+      destructor Destroy; override;
+      class function New(Value : iItem) : iItemOperacaoes;
+      function Vender : iItem;
+      function Cancelar : iItem;
+      function Desconto : iItem;
+      function Devolver : iItem;
+  end;
+
+implementation
+
+{ TModelItemAtivo }
+
+constructor TModelItemAtivo.Create(Value : iItem);
+begin
+  FAncestral := Value;
+end;
+
+destructor TModelItemAtivo.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelItemAtivo.New(Value : iItem) : iItemOperacaoes;
+begin
+  Result := Self.Create(Value);
+end;
+
+end.

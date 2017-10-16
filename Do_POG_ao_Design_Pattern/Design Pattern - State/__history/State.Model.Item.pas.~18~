@@ -1,0 +1,85 @@
+unit State.Model.Item;
+
+interface
+
+uses State.Model.Interfaces, State.Model.Item.Ativo, State.Model.Item.Vendido;
+
+Type
+  TModelItem = class(TInterfacedObject, iItem, iItemOperacaoes, iState<iItemOperacaoes>)
+  private
+    FState : iItemOperacaoes;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iItem;
+    function Vender: iItemOperacaoes;
+    function Cancelar: iItemOperacaoes;
+    function Desconto: iItemOperacaoes;
+    function Devolver: iItemOperacaoes;
+    function SetState(Value : iItemOperacaoes) : iItemOperacaoes;
+    function State : iState<iItemOperacaoes = interface>;
+  end;
+
+implementation
+
+{ TModelItem }
+
+function TModelItem.Cancelar: iItemOperacaoes;
+begin
+  FState.Cancelar;
+  //Implementa o codigo de cancelamento
+  FState := TModelItemAtivo.New;
+  Result := Self;
+end;
+
+constructor TModelItem.Create;
+begin
+  FState := TModelItemAtivo.New;
+end;
+
+function TModelItem.Desconto: iItemOperacaoes;
+begin
+  FState.Desconto;
+  //Implementa o codigo
+  Result := Self;
+end;
+
+destructor TModelItem.Destroy;
+begin
+
+  inherited;
+end;
+
+function TModelItem.Devolver: iItemOperacaoes;
+begin
+  FState.Devolver;
+  //Implementa o codigo
+  FState := TModelItemAtivo.New;
+  Result := Self;
+end;
+
+class function TModelItem.New: iItem;
+begin
+  Result := Self.Create;
+end;
+
+function TModelItem.SetState(Value: iItemOperacaoes): iItemOperacaoes;
+begin
+  Result := Self;
+  FState := Value;
+end;
+
+function TModelItem.State: iState<iItem>;
+begin
+  Result := Self;
+end;
+
+function TModelItem.Vender: iItemOperacaoes;
+begin
+  FState.Vender;
+  //Implementa o codigo
+  FState := TModelItemVendido.New;
+  Result := Self;
+end;
+
+end.

@@ -1,0 +1,13 @@
+unit State.Model.Interfaces;
+
+interface
+
+type
+
+  iItem = interface
+    ['{2FA38521-9128-49F7-87F6-8736BA74D958}']
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,96 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 627
+  ClientWidth = 618
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Label2: TLabel
+    Align = Client
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 618.000000000000000000
+    Size.Height = 120.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Usu'#225'rio:'
+    TabOrder = 2
+  end
+  object btnRenova: TButton
+    Align = Bottom
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 571.000000000000000000
+    Size.Width = 618.000000000000000000
+    Size.Height = 56.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'RENOVAR CHAVE'
+    TextSettings.Font.Size = 15.000000000000000000
+    OnClick = btnRenovaClick
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    StyledSettings = [Family, Style, FontColor]
+    TextSettings.Font.Size = 15.000000000000000000
+    Align = Bottom
+    Position.Y = 266.000000000000000000
+    Size.Width = 618.000000000000000000
+    Size.Height = 305.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 614.000000000000000000
+    Viewport.Height = 301.000000000000000000
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Bottom
+    TabOrder = 5
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.HorzAlign = Center
+    Position.Y = 177.000000000000000000
+    Size.Width = 618.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 618.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object Label1: TLabel
+      Align = Contents
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 618.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Controle de Sess'#227'o REDIS'
+      TabOrder = 0
+    end
+  end
+  object Button2: TButton
+    Align = Bottom
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 210.000000000000000000
+    Size.Width = 618.000000000000000000
+    Size.Height = 56.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'LOGAR'
+    TextSettings.Font.Size = 15.000000000000000000
+    OnClick = Button1Click
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 280
+    Top = 264
+  end
+end
