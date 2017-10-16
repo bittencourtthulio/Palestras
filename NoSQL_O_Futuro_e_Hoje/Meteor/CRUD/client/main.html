@@ -1,0 +1,36 @@
+<head>
+  <title>Cadastro de Emails</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Lista de Emails</h1>
+      {{> cadastro}}
+  </div> 
+</body>
+
+
+<template name="cadastro">
+  <h2 class="text-center">Emails Cadastrados</h2>
+  <form>
+    <div class="form-group">
+      <input class="form-control" type="email" data-email>
+    </div>
+    <button  class="btn btn-primary btn-lg btn-block" type="submit">Adicionar</button>
+  </form>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Acão</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each lista }}
+        <tr>
+          <td>{{ valor }}</td>
+          <td><a href="#" id="excluir" class="btn btn-danger btn-sm">Excluir</a></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>
