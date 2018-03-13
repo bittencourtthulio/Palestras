@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/08/18 21:57:04.000.075,D:\Projetos\Palestras\2017_Um_Odisseia_NoSQL\Sample\ProjectGroup1.groupproj=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+    <Transaction>2017/08/18 22:33:29.000.208,D:\Projetos\Palestras\2017_Um_Odisseia_NoSQL\Sample\ProjectGroup1.groupproj=D:\Projetos\Palestras\2017_Um_Odisseia_NoSQL\Sample\Palestra_Odisseia_NoSQL.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="D:\Projetos\Palestras\2017_Um_Odisseia_NoSQL\Sample\Redis\ControleSessao.dproj"/>
+	</Default.Personality>
+</BorlandProject>

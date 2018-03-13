@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{9EBFDDC2-4032-4A44-BF08-9B65FEA5E872}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Redis\ControleSessao.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Mongo\SimplesInsert.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Mongo\Exemplo_Completo_Extras\CursoMongoCompleto.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\Componentes\TMongoComponents-master\Samples\Firemonkey\CRUD_COM_IMAGENS\DMongoBR_Firemonkey.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\Componentes\TMongoComponents-master\Samples\VCL\Componentes\DMongoBR_VCL_Components.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\Diversos\ImportMongoToElastic\MongoToElastic.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ControleSessao">
+        <MSBuild Projects="Redis\ControleSessao.dproj"/>
+    </Target>
+    <Target Name="ControleSessao:Clean">
+        <MSBuild Projects="Redis\ControleSessao.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ControleSessao:Make">
+        <MSBuild Projects="Redis\ControleSessao.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SimplesInsert">
+        <MSBuild Projects="Mongo\SimplesInsert.dproj"/>
+    </Target>
+    <Target Name="SimplesInsert:Clean">
+        <MSBuild Projects="Mongo\SimplesInsert.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SimplesInsert:Make">
+        <MSBuild Projects="Mongo\SimplesInsert.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CursoMongoCompleto">
+        <MSBuild Projects="Mongo\Exemplo_Completo_Extras\CursoMongoCompleto.dproj"/>
+    </Target>
+    <Target Name="CursoMongoCompleto:Clean">
+        <MSBuild Projects="Mongo\Exemplo_Completo_Extras\CursoMongoCompleto.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CursoMongoCompleto:Make">
+        <MSBuild Projects="Mongo\Exemplo_Completo_Extras\CursoMongoCompleto.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DMongoBR_Firemonkey">
+        <MSBuild Projects="..\..\..\Componentes\TMongoComponents-master\Samples\Firemonkey\CRUD_COM_IMAGENS\DMongoBR_Firemonkey.dproj"/>
+    </Target>
+    <Target Name="DMongoBR_Firemonkey:Clean">
+        <MSBuild Projects="..\..\..\Componentes\TMongoComponents-master\Samples\Firemonkey\CRUD_COM_IMAGENS\DMongoBR_Firemonkey.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DMongoBR_Firemonkey:Make">
+        <MSBuild Projects="..\..\..\Componentes\TMongoComponents-master\Samples\Firemonkey\CRUD_COM_IMAGENS\DMongoBR_Firemonkey.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DMongoBR_VCL_Components">
+        <MSBuild Projects="..\..\..\Componentes\TMongoComponents-master\Samples\VCL\Componentes\DMongoBR_VCL_Components.dproj"/>
+    </Target>
+    <Target Name="DMongoBR_VCL_Components:Clean">
+        <MSBuild Projects="..\..\..\Componentes\TMongoComponents-master\Samples\VCL\Componentes\DMongoBR_VCL_Components.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DMongoBR_VCL_Components:Make">
+        <MSBuild Projects="..\..\..\Componentes\TMongoComponents-master\Samples\VCL\Componentes\DMongoBR_VCL_Components.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MongoToElastic">
+        <MSBuild Projects="..\..\..\Diversos\ImportMongoToElastic\MongoToElastic.dproj"/>
+    </Target>
+    <Target Name="MongoToElastic:Clean">
+        <MSBuild Projects="..\..\..\Diversos\ImportMongoToElastic\MongoToElastic.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MongoToElastic:Make">
+        <MSBuild Projects="..\..\..\Diversos\ImportMongoToElastic\MongoToElastic.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ControleSessao;SimplesInsert;CursoMongoCompleto;DMongoBR_Firemonkey;DMongoBR_VCL_Components;MongoToElastic"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ControleSessao:Clean;SimplesInsert:Clean;CursoMongoCompleto:Clean;DMongoBR_Firemonkey:Clean;DMongoBR_VCL_Components:Clean;MongoToElastic:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ControleSessao:Make;SimplesInsert:Make;CursoMongoCompleto:Make;DMongoBR_Firemonkey:Make;DMongoBR_VCL_Components:Make;MongoToElastic:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
